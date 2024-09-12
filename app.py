@@ -12,7 +12,7 @@ south_belt_df['normalized_price'] = south_belt_df.groupby('level5')['price'].tra
 )
 south_belt_df[['level5', 'price', 'normalized_price']].head()
 
-# Plot the histograms for each population in the same plot
+
 south_belt_df.groupby('level5')['normalized_price'].plot(kind='hist', alpha=0.5, legend=True, bins=20)
 
 plt.xlabel('Normalized Price')
